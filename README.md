@@ -13,7 +13,7 @@ Register for sandbox user
 ## Login Flow
 
 You have to first login with the `POST tasty-trade/login` endpoint. This uses the `POST /session` from Tasty Trade.
-This will provide a session token and this session token must be used for all subsequent calls.
+This will provide a session token and this session token must be used for all subsequent calls. Provide this token in headers, Authorization: {token}. Do not have Bearer prefixing the token.
 
 ## Create Customer and Account
 
@@ -22,11 +22,11 @@ Do so here (same site as above): https://developer.tastytrade.com/sandbox/
 
 ## Retrieving Account Number
 
-In order to get an account number, you have to get it from the `GET tasty-trade/accounts` endpoint.
+In order to get an account number, you have to get it from the `GET tasty-trade/accounts` endpoint. Provide the session token in headers, Authorization: {token}. Do not have Bearer prefixing the token.
 
 ## Retrieving Positions / Balance
 
-To retrieve that accounts position / balances, use the `GET /tasty-trade/accounts/:accountId/positions` or `GET /tasty-trade/accounts/:accountId/balances` endpoint.
+To retrieve that accounts position / balances, use the `GET /tasty-trade/accounts/:accountId/positions` or `GET /tasty-trade/accounts/:accountId/balances` endpoint. Provide the session token in headers, Authorization: {token}. Do not have Bearer prefixing the token.
 
 ## Examples
 
