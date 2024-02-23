@@ -1,3 +1,9 @@
+# Setup
+
+Clone the repo and run `npm install`
+
+Can run `npm run start` to run the server locally.
+
 # Sandbox
 
 You have to go here: https://developer.tastytrade.com/sandbox/
